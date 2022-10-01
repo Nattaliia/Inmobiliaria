@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.example.inmobiliaria.ui.inicio.InicioFragment"
+        android:label="Ubicacion"
+        tools:layout="@layout/inicio_fragment" />
+
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.example.inmobiliaria.ui.perfil.PerfilFragment"
+        android:label="@string/perfil"
+        tools:layout="@layout/perfil_fragment" >
+        <action
+            android:id="@+id/action_perfilFragment_to_nav_inicio"
+            app:destination="@id/nav_inicio" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/inmueblesFragment"
+        android:name="com.example.inmobiliaria.ui.inmuebles.InmueblesFragment"
+        android:label="Inmuebles"
+        tools:layout="@layout/inmuebles_fragment">
+        <action
+            android:id="@+id/action_inmueblesFragment_to_inmuebleFragment"
+            app:destination="@id/inmuebleFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/inmuebleFragment"
+        android:name="com.example.inmobiliaria.ui.inmuebles.InmuebleFragment"
+        android:label="Inmueble"
+        tools:layout="@layout/inmueble_fragment" >
+        <action
+            android:id="@+id/action_inmuebleFragment_to_inmueblesFragment"
+            app:destination="@id/inmueblesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/inquilinosFragment"
+        android:name="com.example.inmobiliaria.ui.inquilinos.InquilinosFragment"
+        android:label="Inquilinos"
+        tools:layout="@layout/inmuebles_fragment" >
+        <action
+            android:id="@+id/action_inquilinosFragment_to_inquilinoFragment"
+            app:destination="@id/inquilinoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/inquilinoFragment"
+        android:name="com.example.inmobiliaria.ui.inquilinos.InquilinoFragment"
+        android:label="Inquilino"
+        tools:layout="@layout/inquilino_fragment" >
+        <action
+            android:id="@+id/action_inquilinoFragment_to_inquilinosFragment"
+            app:destination="@id/inquilinosFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contratoFragment"
+        android:name="com.example.inmobiliaria.ui.contratos.ContratoFragment"
+        android:label="Contrato"
+        tools:layout="@layout/contrato_fragment" >
+        <action
+            android:id="@+id/action_contratoFragment_to_contratosFragment"
+            app:destination="@id/contratosFragment" />
+        <action
+            android:id="@+id/action_contratoFragment_to_pagoFragment"
+            app:destination="@id/PagoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contratosFragment"
+        android:name="com.example.inmobiliaria.ui.contratos.ContratosFragment"
+        android:label="Contratos Vigentes"
+        tools:layout="@layout/contratos_fragment" >
+        <action
+            android:id="@+id/action_contratosFragment_to_contratoFragment"
+            app:destination="@id/contratoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PagoFragment"
+        android:name="com.example.inmobiliaria.ui.pagos.PagoFragment"
+        android:label="Detalle de Pagos"
+        tools:layout="@layout/pago_fragment" >
+        <action
+            android:id="@+id/action_pagoFragment_to_contratoFragment"
+            app:destination="@id/contratoFragment" />
+    </fragment>
+
+    <activity
+        android:id="@+id/login"
+        android:name="com.example.inmobiliaria.login.Login"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+
+
+    <fragment
+        android:id="@+id/logoutFragment"
+        android:name="com.example.inmobiliaria.ui.logout.LogoutFragment"
+        android:label="Salir"
+        tools:layout="@layout/logout_fragment" />
+</navigation>

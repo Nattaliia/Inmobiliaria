@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tvcod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Código pago:"
+        app:layout_constraintBottom_toTopOf="@+id/textView35"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvCodigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text=""
+        android:textSize="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvcod"
+        app:layout_constraintStart_toEndOf="@+id/tvcod" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Número de pago: "
+        app:layout_constraintBottom_toTopOf="@+id/textView37"
+        app:layout_constraintTop_toBottomOf="@+id/tvcod"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text=""
+        android:textSize="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView35"
+        app:layout_constraintStart_toEndOf="@+id/textView35" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Código de contrato:"
+        app:layout_constraintBottom_toTopOf="@+id/textView38"
+        app:layout_constraintTop_toBottomOf="@+id/textView35"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Importe:"
+        app:layout_constraintBottom_toTopOf="@+id/textView40"
+        app:layout_constraintTop_toBottomOf="@+id/textView37"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvImporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text=""
+        android:textSize="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView38"
+        app:layout_constraintStart_toEndOf="@+id/textView38" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de pago:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView38"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tvFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text=""
+        android:textSize="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView40"
+        app:layout_constraintStart_toEndOf="@+id/textView40" />
+
+    <TextView
+        android:id="@+id/tvIdContrato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text=""
+        android:textSize="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView37"
+        app:layout_constraintStart_toEndOf="@+id/textView37" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
